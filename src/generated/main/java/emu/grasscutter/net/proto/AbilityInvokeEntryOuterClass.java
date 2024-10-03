@@ -373,7 +373,7 @@ public final class AbilityInvokeEntryOuterClass {
       if (eventId_ != 0) {
         output.writeUInt32(2, eventId_);
       }
-      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
+      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_NONE.getNumber()) {
         output.writeEnum(3, argumentType_);
       }
       if (forwardPeer_ != 0) {
@@ -410,7 +410,7 @@ public final class AbilityInvokeEntryOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, eventId_);
       }
-      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_INVOKE_ARGUMENT_NONE.getNumber()) {
+      if (argumentType_ != emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument.ABILITY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, argumentType_);
       }
@@ -1291,8 +1291,8 @@ public final class AbilityInvokeEntryOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030AbilityInvokeEntry.proto\032\033AbilityInvok" +
-      "eArgument.proto\032\034AbilityInvokeEntryHead." +
-      "proto\032\021ForwardType.proto\"\220\002\n\022AbilityInvo" +
+      "eArgument.proto\032\021ForwardType.proto\032\034Abil" +
+      "ityInvokeEntryHead.proto\"\220\002\n\022AbilityInvo" +
       "keEntry\022\020\n\010event_id\030\002 \001(\r\022-\n\rargument_ty" +
       "pe\030\003 \001(\0162\026.AbilityInvokeArgument\022\024\n\014forw" +
       "ard_peer\030\004 \001(\r\022\"\n\014forward_type\030\007 \001(\0162\014.F" +
@@ -1306,8 +1306,8 @@ public final class AbilityInvokeEntryOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.getDescriptor(),
         });
     internal_static_AbilityInvokeEntry_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1316,8 +1316,8 @@ public final class AbilityInvokeEntryOuterClass {
         internal_static_AbilityInvokeEntry_descriptor,
         new java.lang.String[] { "EventId", "ArgumentType", "ForwardPeer", "ForwardType", "Head", "IsIgnoreAuth", "EntityId", "TotalTickTime", "AbilityData", });
     emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.getDescriptor();
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

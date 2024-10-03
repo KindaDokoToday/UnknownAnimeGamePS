@@ -147,6 +147,10 @@ public final class ChangeHpReasonOuterClass {
      * <code>CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING = 109;</code>
      */
     CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING(109),
+    /**
+     * <code>CHANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5 = 110;</code>
+     */
+    CHANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5(110),
     UNRECOGNIZED(-1),
     ;
 
@@ -278,6 +282,10 @@ public final class ChangeHpReasonOuterClass {
      * <code>CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING = 109;</code>
      */
     public static final int CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING_VALUE = 109;
+    /**
+     * <code>CHANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5 = 110;</code>
+     */
+    public static final int CHANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5_VALUE = 110;
 
 
     public final int getNumber() {
@@ -336,6 +344,7 @@ public final class ChangeHpReasonOuterClass {
         case 107: return CHANGE_HP_REASON_ADD_GM;
         case 108: return CHANGE_HP_REASON_ADD_TRIAL_AVATAR_ACTIVITY;
         case 109: return CHANGE_HP_REASON_ADD_ROGUELIKE_SPRING;
+        case 110: return CHANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5;
         default: return null;
       }
     }
@@ -401,7 +410,7 @@ public final class ChangeHpReasonOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ChangeHpReason.proto*\352\010\n\016ChangeHpReaso" +
+      "\n\024ChangeHpReason.proto*\231\t\n\016ChangeHpReaso" +
       "n\022\031\n\025CHANGE_HP_REASON_NONE\020\000\022\037\n\033CHANGE_H" +
       "P_REASON_SUB_AVATAR\020\001\022 \n\034CHANGE_HP_REASO" +
       "N_SUB_MONSTER\020\002\022\035\n\031CHANGE_HP_REASON_SUB_" +
@@ -429,8 +438,9 @@ public final class ChangeHpReasonOuterClass {
       "\n\037CHANGE_HP_REASON_ADD_BACKGROUND\020j\022\033\n\027C" +
       "HANGE_HP_REASON_ADD_GM\020k\022.\n*CHANGE_HP_RE" +
       "ASON_ADD_TRIAL_AVATAR_ACTIVITY\020l\022)\n%CHAN" +
-      "GE_HP_REASON_ADD_ROGUELIKE_SPRING\020mB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "GE_HP_REASON_ADD_ROGUELIKE_SPRING\020m\022-\n)C" +
+      "HANGE_HP_REASON_ADD_EFFIGY_CHALLENGE_V_5" +
+      "\020nB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
